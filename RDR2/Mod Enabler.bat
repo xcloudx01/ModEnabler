@@ -1,6 +1,6 @@
 @echo off
 rem Change the line below to point to your game!
-SET gameDir=G:\SteamLibrary\steamapps\common\Red Dead Redemption\
+SET gameDir=G:\SteamLibrary\steamapps\common\Red Dead Redemption 2
 
 rem Thanks for downloading my launcher, feel free to take a look at/borrow anything you find in here
 rem Modified from FaZe IlLuMiNaTi's Mod Enabler by achmadfhbw for Red Dead Redemption 2
