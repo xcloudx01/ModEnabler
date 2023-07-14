@@ -68,6 +68,10 @@ move ExecuteCode .. > nul 2> nul
 move Logs .. > nul 2> nul
 move SweetFX .. > nul 2> nul
 move enbseries .. > nul 2> nul
+move Seasons .. > nul 2> nul
+move SeasonsVestigia .. > nul 2> nul
+move lml .. > nul 2> nul
+move BountiesExpansion .. > nul 2> nul
 
 rem Cleaning
 cd ..
@@ -167,6 +171,10 @@ move ExecuteCode _DisabledMods > nul 2> nul
 move Logs _DisabledMods > nul 2> nul
 move SweetFX _DisabledMods > nul 2> nul
 move enbseries _DisabledMods > nul 2> nul
+move Seasons _DisabledMods > nul 2> nul
+move SeasonsVestigia _DisabledMods > nul 2> nul
+move lml _DisabledMods > nul 2> nul
+move BountiesExpansion _DisabledMods > nul 2> nul
 
 goto launchoption
 
