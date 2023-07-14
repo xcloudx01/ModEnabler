@@ -1,25 +1,28 @@
 @echo off
+rem Change the line below to point to your game!
+SET gameDir=G:\SteamLibrary\steamapps\common\Red Dead Redemption\
+
 rem Thanks for downloading my launcher, feel free to take a look at/borrow anything you find in here
+rem Modified from FaZe IlLuMiNaTi's Mod Enabler by achmadfhbw for Red Dead Redemption 2
+set "version=1.4.5"
+set scriptTitle=achmadfhbw's Mod Enabler %version%
 
-rem Wow, its been a while since 1.3.6, hasn't it? - At the time of writing, about a year!
-
-rem Red Dead Redemption 2 Mod Enabler 1.4.4
-set "version=1.4.4"
-
-rem See if the current directory has the GTA5 files
+rem See if the current directory has the RDR2 files
 :dircheck
 @echo off
-cd /d "%~dp0"
+cd /d "%gameDir%"
 if exist RDR2.exe (
 	if exist update.rpf (
 		if exist appdata0_update.rpf (
 			goto mainmenu)
 		)
 	) else (
-		title Please put this file in Grand Theft Auto V's root directory
-		echo Please put this file in Grand Theft Auto V's root directory
+		title %scriptTitle%
+		cls
+		echo RDR2.exe not detected in %gameDir%
 		echo:
 		echo:
+		echo Did you specify the game path correctly in Line 3 of this script?
 		pause
 		goto end
 		)
@@ -31,9 +34,9 @@ rem Main menu
 @echo off
 cls
 set "curpath=%cd%"
-title achmadfhbw's Mod Enabler %version%
-echo Welcome to achmadfhbw's Mod Enabler %version%
-echo Modified from FaZe IlLuMiNaTi's Mod Enabler by achmadfhbw for Red Dead Redemption 2
+title %scriptTitle%
+echo Welcome to %scriptTitle%
+echo gameDir detected as: %gameDir%
 echo:
 if not exist _DisabledMods echo Mods are currently enabled
 if exist disabled echo Mods are currently _DisabledMods
