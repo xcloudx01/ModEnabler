@@ -93,6 +93,7 @@ move *.ini _DisabledMods > nul 2> nul
 move *.sav _DisabledMods > nul 2> nul
 move *.file _DisabledMods > nul 2> nul
 move *.xml _DisabledMods > nul 2> nul
+move *.dat _DisabledMods > nul 2> nul
 move Readme.txt _DisabledMods > nul 2> nul
 
 rem ScriptHookRDR2
